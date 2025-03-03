@@ -1,0 +1,18 @@
+2025-03-02 23:12:37 [info]: User created: {"id":2,"name":"Körte Gyümölcs","email":"korte@gyumolcskert.hu"}
+2025-03-02 23:17:20 [info]: GET /users
+2025-03-02 23:17:20 [info]: GET / - 200 OK
+2025-03-02 23:17:29 [info]: POST /users
+2025-03-02 23:17:29 [info]: User created: {"id":3,"name":"Szilva Gyümölcs","email":"szilva@gyumolcskert.hu"}
+2025-03-02 23:17:29 [info]: POST / - 201 Created
+2025-03-02 23:22:44 [info]: GET /users
+2025-03-02 23:22:44 [info]: GET / - 200 OK
+2025-03-02 23:22:46 [info]: POST /users
+2025-03-02 23:22:46 [info]: POST / - 400 Bad Request
+2025-03-02 23:23:19 [info]: POST /users
+2025-03-02 23:23:19 [info]: POST / - 400 Bad Request
+2025-03-02 23:41:17 [info]: GET /users
+2025-03-02 23:41:17 [info]: GET / - 200 OK
+2025-03-02 23:41:21 [info]: GET /users
+2025-03-02 23:41:21 [info]: GET / - 200 OK
+2025-03-02 23:41:22 [info]: GET /users
+2025-03-02 23:41:22 [info]: GET / - 200 OK
