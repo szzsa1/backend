@@ -15,6 +15,18 @@ datasource db {
 
 model User {
   id    Int    @id @default(autoincrement())
+  idTipus String
   name  String
   email String @unique
+
+  
+  gyTipus gyTipus @relation(fields: [idTipus], references: [id])
+}
+
+model gyTipus {
+  id String @id @default(cuid())
+  nev String
+
+  User User[]
+ 
 }

@@ -11,7 +11,7 @@ class UserService {
    * @param data  - User data: { name: string, email: string }
    * @returns     - The created user
    */
-  async createUser(data: UserInput) {
+  async createUser(data: any) {
     try {
       const user = await prisma.user.create({ data });
       return user;
@@ -27,7 +27,11 @@ class UserService {
    */
   async getUsers() {
     try {
-      const users = await prisma.user.findMany();
+      const users = await prisma.user.findMany({
+        include: {
+          gyTipus: true
+        }
+      });
       return users;
     } catch (error) {
       logger.error(`Error fetching users: ${error}`);
